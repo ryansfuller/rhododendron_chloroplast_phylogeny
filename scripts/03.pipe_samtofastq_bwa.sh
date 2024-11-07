@@ -1,6 +1,12 @@
+#!/bin/bash
 
-#Pipe 
+#Purpose:Pipe reads through BWA via GATK. 
+#Details: Pipe the chloroplast-mapped/read-group updated reads through gatk by first converting back 
+#to fastq, then feeding the fastq files to BWA. GATK MergeBamAlignment can then take the 
+#output of BWA and create a new output BAM file while preserving the data that may otherwise 
+#be lost whe converting to FASTQ 
 
+#BEGIN CODE
 #define variables
 IND=$1
 
