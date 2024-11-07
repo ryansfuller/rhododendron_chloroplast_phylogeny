@@ -1,6 +1,7 @@
 #!/bin/bash
 
-
+#convert a mapped bam file to an unmapped bam file in preparation for conversion to fastq and downstream mapping
+#see GATK best practices for handling read data: https://gatk.broadinstitute.org/hc/en-us/articles/4403687183515--How-to-Generate-an-unmapped-BAM-from-FASTQ-or-aligned-BAM
 
 #define variables
 IND=$1
